@@ -4,8 +4,8 @@ app.use(express.static("public"));
 
 const path = require("path");
 
-const logger = require("morgan");
-app.use(logger("dev"));
+// const logger = require("morgan");
+// app.use(logger("dev"));
 
 app.set("view engine", "ejs");
 
