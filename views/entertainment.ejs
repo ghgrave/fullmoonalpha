@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+  <div class="container_fluid" id="entertainment_image_container">
+      <div id="cards_container">
+        <% cardData.forEach(element => { %>
+            <div class="card shadow-lg" style="width: 18rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title "><%= element %></h5>
+                  <img src="..." class="card-img-top" alt="...">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          <% }) %>
+      </div>
+      
+    
+    <nav>
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/images">images</a></li>
+        <li><a href="/legends">legends</a></li>
+        <li><a href="/devs">devs</a></li>
+      </ul>
+    </nav>
+    <div class="credits">
+      Image by
+      <a href="https://pixabay.com/users/liggrafik-12111851/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5040211"
+        target='_blank'>liggrafik</a>
+      from
+      <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5040211"
+        target='_blank'>Pixabay</a>
+    </div>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+</body>

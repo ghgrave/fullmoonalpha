@@ -1,0 +1,29 @@
+{
+  "name": "fullmoonalpha",
+  "version": "1.0.0",
+  "description": "Site for all things werewolf including developer data for API consumption.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "werewolf",
+    "api",
+    "lycanthrope",
+    "data"
+  ],
+  "author": "gHgraveDesigns",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

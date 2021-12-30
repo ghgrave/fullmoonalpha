@@ -1,0 +1,269 @@
+#palette {
+  color: #221111; /* Spanish Shadow */
+  color: #772222; /* Sloppy */
+  color: #bb4433; /* Spanish Pink */
+  color: #ffbb99; /* Peacht Keane */
+  color: #dd6655; /* Coral */
+  color: #9f3621; /* Dark Orange */
+  color: #8e755c; /* Light Brown/Tan */
+  color: #ebf1b8; /* Ooze - light green */
+  color: #665511; /* DarkShi#$% */
+  font-family: creepster, fantasy;
+  font-family: butcherman, fantasy;
+  font-family: eater, fantasy;
+
+  /* Used for this app */
+  color: white;
+  color: #8e755c; /* Light Brown/Tan */
+  color: #000000; /* black */
+  color: #aa2222; /* Aureus Aureus Aureum */
+  color: #bdc6bc; /* Full Moon */
+  font-family: nosifer, fantasy;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* LANDING PAGE */
+#landing_image_container {
+  height: 100vh;
+  position: relative;
+  background: #8e755c url("./assets/images/wolf_graveyard.jpg") center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+#landing_image_container h1 {
+  color: #aa2222;
+  text-shadow: 2px 2px black, 3px 3px white;
+  font-family: nosifer, fantasy;
+  font-size: 5em;
+  position: absolute;
+  right: 0;
+}
+
+#landing_image_container nav,
+#entertainment_image_container nav,
+#legends_image_container nav {
+  position: absolute;
+  bottom: 10%;
+}
+
+#landing_image_container li,
+#legends_image_container li,
+#entertainment_image_container li {
+  font-family: nosifer, fantasy;
+  font-size: 2.5em;
+  color: #aa2222;
+  text-shadow: 1px 1px white, 2px 2px black;
+  display: inline-block;
+  margin-left: 4em;
+}
+
+#landing_image_container li a,
+#legends_image_container li a,
+#entertainment_image_container li a {
+  text-decoration: none;
+}
+
+#landing_image_container li a:active,
+#landing_image_container li a:visited,
+#landing_image_container li a:link {
+  color: #aa2222;
+}
+
+#landing_image_container a:hover {
+  color: red;
+  text-shadow: 1px 1px black, 0 0 10px white;
+}
+
+#entertainment_image_container a:hover {
+  color: darkblue;
+  text-shadow: 1px 1px black, 0 0 10px white;
+}
+
+/* ENTERTAINMENT PAGE */
+#entertainment_image_container {
+  height: 100vh;
+  position: relative;
+  background: #8e755c url("./assets/images/super_moon.jpg") center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+#cards_container .card {
+  display: inline-block;
+  margin: 5% 2%;
+  height: 60vh;
+  background-color: transparent;
+  border: 5px #00000012 solid;
+  position: relative;
+}
+
+#cards_container .card .btn {
+  position: absolute;
+  bottom: 2%;
+}
+
+/* IMAGES page */
+.navbar {
+  background-color: #323030;
+  font-family: nosifer, fantasy;
+  font-size: 1.75em;
+}
+
+.navbar li a {
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+}
+
+.navbar li a:active,
+.navbar li a:visited,
+.navbar li a:link {
+  color: #9f3621; /* Dark Orange */
+}
+
+.navbar a:hover {
+  color: #9f3621; /* Dark Orange */
+  text-shadow: 1px 1px black, 0 0 10px white;
+}
+
+.navbar-brand {
+  height: 2.5em;
+  width: 1.75em;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .btn {
+  background: #9f3621; /* Dark Orange */
+  color: white;
+  font-size: 1em;
+  /* text-shadow: 1px 1px white; */
+}
+
+.navbar .btn-outline-success {
+  border: 2px solid #aa2222;
+  box-shadow: 1px 1px black, 0 0 1px white;
+}
+
+#imagesPage .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#imagesPage .col {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+#imagesPage .col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  #imagesPage .col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #imagesPage .col {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* LEGENDS PAGE */
+#legends_image_container {
+  height: 100vh;
+  position: relative;
+  background: #8e755c url("./assets/images/oldMap.jpg") center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+#legends_image_container h1 {
+  color: #aa2222;
+  text-shadow: 2px 2px black, 3px 3px white;
+  font-family: nosifer, fantasy;
+  font-size: 5em;
+  position: absolute;
+  right: 0;
+}
+
+#legends_image_container li a:active,
+#legends_image_container li a:visited,
+#legends_image_container li a:link {
+  color: #aa2222;
+}
+
+#legends_image_container a:hover {
+  color: red;
+  text-shadow: 1px 1px white, 0 0 10px red;
+}
+
+#legendsPage #copyright {
+  color: red;
+  font-weight: bold;
+  font-size: 0.75rem;
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  text-shadow: 1px 1px white, 1px 1px 10px black;
+}
+
+
+
+/* FOOTER Stuff */
+.credits {
+  font-size: 0.75rem;
+  color: #aa2222;
+  font-weight: bold;
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+}
+
+.credits a {
+  color: #8e755c; /* Light Brown/Tan */
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+}
+
+.credits a:active,
+.credits a:visited,
+.credits a:link,
+.credits a:hover {
+  color: #8e755c; /* Light Brown/Tan */
+}
+
+#copyright {
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #bdc6bc;
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+}
+
