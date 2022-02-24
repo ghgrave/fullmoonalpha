@@ -162,11 +162,11 @@
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create five equal columns that sits next to each other */
 #imagesPage .col {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
   padding: 0 4px;
 }
 
@@ -176,16 +176,16 @@
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a three column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   #imagesPage .col {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   #imagesPage .col {
     -ms-flex: 100%;
