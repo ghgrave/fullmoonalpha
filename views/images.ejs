@@ -5,18 +5,21 @@
 
   <h1 class="text-center text-white">I am the Temporary Images page</h1>
   <!-- Photo Grid -->
+  <!-- finds the length of array - should be multiple of 5 -->
   <% let limit = Math.floor(images.length/5)%> 
+  
+  <!-- used for determining how many imges per column -->
   <% let counter = 0 %>
   <div class="row">
-    <% for( let index = 0; index < limit; index++ ) { %>
+    <% for( let index = 0; index < 5; index++ ) { %>
       <div class="col">
-        <% for( let j = 0; j < 3; j++ ) { %> 
-          <% let source = images[j+counter] %>
-          <% if (source) { %>
-            <img src="<%= source %>" alt="werewolf" />
+        <% for( let j = 0; j < limit; j++ ) { %> 
+          <!-- if image of object is not null, display it -->
+          <% if (images[j+counter].image) { %>
+            <img src="<%= images[j+counter].image %>" alt="<%= images[j+counter].name %>" />
           <% } %>
         <% } %>
-        <% counter += 3 %>
+        <% counter += limit %>
       </div>
     <% } %>
   </div>
