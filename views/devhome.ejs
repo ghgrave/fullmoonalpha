@@ -50,6 +50,30 @@
           </div>
           <div class="col-lg-7 text-center" style="border: green solid 2px">
             <h2>Descriptions and Keywords:</h2>
+            <% for(attr in controls){%>
+              <div class="card col-lg-3 my-3 mx-5" >
+                  <div class="card-body">
+                      <h5 class="card-title text-center"><%= attr %></h5>
+                      <% controls[attr].forEach(data => { %>
+                          <div class="col">
+                              <input
+                                  class=<%= data.class %>
+                                  type=<%= data.type %> 
+                                  name=<%= data.name %> 
+                                  value=<%= data.value %> 
+                                  id=<%= data.id %> 
+                              />
+                              <label 
+                                  class=<%= data.classLabel %>  
+                                  for=<%= data.for %>>
+                                  <%= data.content %> 
+                              </label>
+                          </div>
+                          
+                      <% }) %>
+                  </div>
+              </div>
+          <% } %>
           </div>
           <button
             type="submit"
