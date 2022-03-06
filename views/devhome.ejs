@@ -1,0 +1,94 @@
+<%- include('partials/header.ejs') %>
+
+<body id="devhomePage">
+  <%- include('partials/navbar.ejs') %>
+
+    <!-- Main Container -->
+    <div class="container-fluid">
+      <h1 class="text-center">Image Uploader Test</h1>
+      <form action="/upload" enctype="multipart/form-data" method="post">
+        <div class="row mx-5" style="border: 2px yellow solid">
+          <div class="col-lg-5" style="border: red solid 2px">
+            <h2 class="text-center">Upload File:</h2>
+            <div class="form-group my-4">
+              <label>
+                Custom name of file:
+                <input
+                type="text"
+                name="customName"
+                autocomplete="off"
+                placeholder="Name of file..."
+              />
+              </label>
+            </div>
+            <!-- <small class="my-2" id="fileHelpId" class="form-text text-muted">
+              Please select the image to be uploaded...
+            </small> -->
+            <div class="form-group">
+              <label>
+                Enter url.....
+                <input
+                  type="text"
+                  name="browserUrl"
+                  autocomplete="off"
+                  placeholder="url...."
+                />
+              </label>
+              
+            </div>
+            <p>or</p>
+            <div class="form-group">
+              <input
+                type="file"
+                class="form-control form-file-button-color-success"
+                name="upload"
+                id="upload"
+                placeholder="upload-image-file"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 text-center" style="border: green solid 2px">
+            <h2>Descriptions and Keywords:</h2>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-success"
+            value="Upload"
+            style="width: 10vw"
+          >
+            Upload
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Form-->
+
+    <!-- <div class="form-group">
+          <input type="text" name="customName" autocomplete="off" placeholder="Name of file..." />
+        </div>
+        <div class="form-group">
+          <input type="text" name="browserUrl" autocomplete="off" placeholder="Enter url....." />
+        </div>
+        <p>or</p>
+        <div class="form-group">
+          <label>
+            <input
+              type="file"
+              class="form-control-file"
+              name="upload"
+              id="upload"
+              placeholder="upload-image-file"
+              autocomplete="off"
+            />
+            <small id="fileHelpId" class="form-text text-muted">
+              Please select the image to be uploaded...
+            </small>
+          </label>
+          
+        </div> -->
+  </body>
+
+  <%- include('partials/footer.ejs')  %> 
+

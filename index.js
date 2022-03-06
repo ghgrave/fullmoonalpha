@@ -15,12 +15,14 @@ require("./api/services/mongoConnection")();
 
 const indexRoutes = require("./api/routes/indexRoutes");
 const homeRoutes = require("./api/routes/homeRoutes");
+const devhomeRoutes = require("./api/routes/devhomeRoutes");
 const entertainmentRoutes = require("./api/routes/entertainmentRoutes");
 const imagesRoutes = require("./api/routes/imagesRoutes");
 const legendsRoutes = require("./api/routes/legendsRoutes");
 
 app.use("/", indexRoutes);
 app.use("/home", homeRoutes);
+app.use("/devs", devhomeRoutes);
 app.use("/entertainment", entertainmentRoutes);
 app.use("/images", imagesRoutes);
 app.use("/legends", legendsRoutes);

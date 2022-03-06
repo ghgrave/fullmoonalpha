@@ -253,6 +253,11 @@
   text-shadow: 1px 1px white, 1px 1px 10px black;
 }
 
+/* DEV PAGE */
+#devhomePage h1 {
+  margin-top: 10vh;
+}
+
 
 
 /* FOOTER Stuff */
