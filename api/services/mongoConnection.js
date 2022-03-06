@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
-// Get database info for connecting
-const keys = require("../../config/keys");
+require("dotenv").config(); 
+const {MONGO_URI, DB} = process.env
 
 // creates the connection of index.js with mongodb
 const connection = () => {
   mongoose
-    .connect(keys.mongoURI)
-    .then(() => console.log(`Connected to ${keys.db} database.`))
+    .connect(MONGO_URI)
+    .then(() => console.log(`Connected to ${DB} database.`))
     .catch((err) =>
-      console.error(`Error connecting to ${keys.db} database: ${err}`)
+      console.error(`Error connecting to ${DB} database: ${err}`)
     );
 };
 
