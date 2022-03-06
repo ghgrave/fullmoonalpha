@@ -1,7 +1,5 @@
-const mongoose = require("mongoose");
-
-require("dotenv").config(); 
-const {MONGO_URI, DB} = process.env
+require("dotenv").config();
+const { MONGO_URI, DB } = process.env;
 
 // creates the connection of index.js with mongodb
 const connection = () => {
