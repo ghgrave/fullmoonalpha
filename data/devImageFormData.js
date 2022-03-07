@@ -117,10 +117,6 @@ module.exports = {
       content: "howling",
     },
     {
-      name: "scary",
-      content: "scary",
-    },
-    {
       name: "transformation",
       content: "transformation",
     },
