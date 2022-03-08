@@ -176,7 +176,7 @@
 #imagesPage .col {
   -ms-flex: 19%; /* IE10 */
   flex: 19%;
-  max-width: 19%;
+  max-width: 20%;
   /* padding: 0 4px; */
   margin: .5vw;
 }
@@ -185,6 +185,7 @@
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  min-height: 20vh;
 }
 
 /* Responsive layout - makes a three column-layout instead of four columns */
