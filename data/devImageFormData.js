@@ -59,7 +59,7 @@ module.exports = {
   ],
   color: [
     {
-      name: "blackwhite",
+      name: "bw",
       content: "black/white",
     },
     {
