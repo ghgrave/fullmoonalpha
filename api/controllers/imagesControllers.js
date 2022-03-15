@@ -1,12 +1,9 @@
-// const { imageInfo } = require("../../data/fakeImageInfo");
-
 const cloudinary = require("../services/cloudinaryConnection");
 
 exports.displayImagesPage = (req, res) => {
-  
   let cloudArr = [];
   cloudinary.v2.search
-    .expression(req.query.q ? `tags=${req.query.q}` : null )
+    .expression(req.query.q ? `tags=${req.query.q.split(" ").join(",")}` : null)
     .aggregate()
     .execute()
     .then((result) => {
@@ -85,8 +82,8 @@ exports.searchImages = (req, res) => {
         };
         data.push(fillerData);
       }
-      req.data = data
-      next()
+      req.data = data;
+      next();
       // res.send("hello")
       // res.redirect(req.get('referer', { images: data }));
       // res.render("images", { images: data });
