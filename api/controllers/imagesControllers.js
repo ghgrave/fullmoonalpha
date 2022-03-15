@@ -45,5 +45,5 @@ exports.displayImagesPage = (req, res) => {
       }
       res.render("images", { images: data });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => res.render("error"));
 };

@@ -48,14 +48,16 @@
 
 #landing_image_container nav,
 #entertainment_image_container nav,
-#legends_image_container nav {
+#legends_image_container nav,
+#error_image_container nav{
   position: absolute;
   bottom: 10%;
 }
 
 #landing_image_container li,
 #legends_image_container li,
-#entertainment_image_container li {
+#entertainment_image_container li,
+#error_image_container li {
   font-family: nosifer, fantasy;
   font-size: 2.5em;
   color: #aa2222;
@@ -66,7 +68,8 @@
 
 #landing_image_container li a,
 #legends_image_container li a,
-#entertainment_image_container li a {
+#entertainment_image_container li a,
+#error_image_container li a {
   text-decoration: none;
 }
 
@@ -293,3 +296,39 @@
   bottom: 1%;
 }
 
+
+
+
+
+/* ERROR PAGE */
+#error_image_container {
+  height: 100vh;
+  position: relative;
+  background: #8e755c url("./assets/images/loup-garou.jpg") center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+#error_image_container h1 {
+  color: #aa2222;
+  text-shadow: 2px 2px white, 3px 3px black;
+  font-family: nosifer, fantasy;
+  font-size: 5em;
+}
+
+#begone {
+  margin-top: 30vh;
+}
+
+#error_image_container h1 a {
+  color: red;
+  text-shadow: 2px 2px white, 3px 3px black;
+  font-family: nosifer, fantasy;
+  font-size: .75em;
+  text-decoration: none;
+}
+
+#error_image_container h1 a:hover {
+  color: #bdc6bc;
+  text-shadow: 2px 2px red, 3px 3px black;
+}
