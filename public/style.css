@@ -49,7 +49,7 @@
 #landing_image_container nav,
 #entertainment_image_container nav,
 #legends_image_container nav,
-#error_image_container nav{
+#error_image_container nav {
   position: absolute;
   bottom: 10%;
 }
@@ -181,7 +181,7 @@
   flex: 19%;
   max-width: 20%;
   /* padding: 0 4px; */
-  margin: .5vw;
+  margin: 0.5vw;
 }
 
 #imagesPage .col img {
@@ -201,7 +201,7 @@
     -ms-flex: 33%;
     flex: 33%;
     max-width: 33%;
-    margin: .1vw;
+    margin: 0.1vw;
   }
 }
 
@@ -222,8 +222,7 @@
 #legends_image_container {
   height: 100vh;
   position: relative;
-  background: #8e755c url("./assets/images/oldMap.jpg") center no-repeat
-    fixed;
+  background: #8e755c url("./assets/images/oldMap.jpg") center no-repeat fixed;
   background-size: cover;
 }
 
@@ -236,6 +235,22 @@
   right: 0;
 }
 
+#legends_text {
+  box-shadow: 4px 4px 10px black;
+  position: relative;
+  height: 70vh;
+  width: 80vw;
+  top: 12vh;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#legends_image_container nav {
+  /* border: blue 2px solid;
+  margin-top: 100px; */
+  margin-bottom: -3.5em;
+}
+
 #legends_image_container li a:active,
 #legends_image_container li a:visited,
 #legends_image_container li a:link {
@@ -245,6 +260,19 @@
 #legends_image_container a:hover {
   color: red;
   text-shadow: 1px 1px white, 0 0 10px red;
+}
+
+#legends_maps_link,
+#legends_maps_link a:active,
+#legends_maps_link a:visited,
+#legends_maps_link a:link {
+  color: #aa2222;
+  text-decoration: none;
+}
+
+#legends_maps_link a:hover {
+  color: red;
+  text-shadow: 1px 1px 2px black;
 }
 
 #legendsPage #copyright {
@@ -261,8 +289,6 @@
 #devhomePage h1 {
   margin-top: 10vh;
 }
-
-
 
 /* FOOTER Stuff */
 .credits {
@@ -296,10 +322,6 @@
   bottom: 1%;
 }
 
-
-
-
-
 /* ERROR PAGE */
 #error_image_container {
   height: 100vh;
@@ -324,7 +346,7 @@
   color: red;
   text-shadow: 2px 2px white, 3px 3px black;
   font-family: nosifer, fantasy;
-  font-size: .75em;
+  font-size: 0.75em;
   text-decoration: none;
 }
 
