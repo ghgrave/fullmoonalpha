@@ -224,6 +224,7 @@
   position: relative;
   background: #8e755c url("./assets/images/oldMap.jpg") center no-repeat fixed;
   background-size: cover;
+  width: 100%;
 }
 
 #legends_image_container h1 {
@@ -233,6 +234,7 @@
   font-size: 5em;
   position: absolute;
   right: 0;
+  z-index: 1;
 }
 
 #legends_text {
@@ -243,6 +245,20 @@
   top: 12vh;
   margin: 0 auto;
   overflow: auto;
+  padding: 2%;
+  background-color: #8e755c8c;
+  font-weight: bolder;
+}
+
+#legends_text h2 {
+  font-family: nosifer, fantasy;
+  font-weight: bolder;
+}
+
+#legends_text #citations {
+  font-size: .75em;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 #legends_image_container nav {
