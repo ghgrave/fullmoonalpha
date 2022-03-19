@@ -255,10 +255,17 @@
   font-weight: bolder;
 }
 
-#legends_text #citations {
+#citations {
   font-size: .75em;
-  color: white;
   text-shadow: 1px 1px black;
+  color: #aa2222;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: -3em;
+}
+
+#citations span {
+  display: block;
+  color: white;
 }
 
 #legends_image_container nav {
