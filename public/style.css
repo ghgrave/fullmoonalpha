@@ -255,6 +255,16 @@
   font-weight: bolder;
 }
 
+#legends_text img {
+  width: 100%;
+  box-shadow: 5px 5px 15px #aa2222;
+}
+
+.img_copy {
+  font-size: .75em;
+  text-align: center;
+}
+
 #citations {
   font-size: .75em;
   text-shadow: 1px 1px black;
